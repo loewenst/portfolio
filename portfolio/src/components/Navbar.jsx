@@ -1,11 +1,5 @@
 import { useState } from 'react'
-import {
-  Navbar,
-  NavbarBrand,
-  NavItem,
-  NavLink,
-  NavbarToggler
-} from 'reactstrap'
+import { Navbar, NavbarBrand, NavLink, NavbarToggler } from 'reactstrap'
 
 const NavBar = (props) => {
   return (

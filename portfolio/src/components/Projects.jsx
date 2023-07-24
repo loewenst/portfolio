@@ -4,7 +4,12 @@ import ProjectInfoCard from './ProjectInfoCard'
 
 const Projects = () => {
   const [modal, setModal] = useState(false)
-  const toggleModal = () => setModal(!modal)
+  const [project, setProject] = useState('')
+  const toggleModal = (str) => {
+    setProject(str)
+    setModal(!modal)
+    console.log(project)
+  }
 
   return (
     <div
@@ -22,41 +27,47 @@ const Projects = () => {
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         <Card
-          onClick={toggleModal}
+          onClick={() => toggleModal('SDSL')}
           style={{
             height: '18vw',
             width: '28vw',
             margin: '15px',
             borderRadius: '15px',
             border: 'none',
-            backgroundImage: 'url("https://i.imgur.com/c8usHtB.jpg?2")'
+            backgroundImage: 'url("https://i.imgur.com/b4m7vyE.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         ></Card>
         <Card
-          onClick={toggleModal}
+          onClick={() => toggleModal('UnpopularOpinions')}
           style={{
             height: '18vw',
             width: '28vw',
             margin: '15px',
             borderRadius: '15px',
             border: 'none',
-            backgroundImage: 'url("https://i.imgur.com/c8usHtB.jpg?2")'
+            backgroundImage: 'url("https://i.imgur.com/gfEMvpH.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         ></Card>
         <Card
-          onClick={toggleModal}
+          onClick={() => toggleModal('Kavanah')}
           style={{
             height: '18vw',
             width: '28vw',
             margin: '15px',
             borderRadius: '15px',
             border: 'none',
-            backgroundImage: 'url("https://i.imgur.com/c8usHtB.jpg?2")'
+            backgroundImage: 'url("https://i.imgur.com/u3uXgZe.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         ></Card>
       </div>
-      <Modal isOpen={modal} toggle={toggleModal}>
-        <ProjectInfoCard />
+      <Modal isOpen={modal} toggle={() => toggleModal('')} size="lg">
+        <ProjectInfoCard project={project} />
       </Modal>
     </div>
   )

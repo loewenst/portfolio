@@ -1,0 +1,18 @@
+.sectionHeader {
+  color: white;
+  text-align: center;
+}
+
+.sectionText {
+  color: white;
+  text-align: center;
+}
+
+#leftSide {
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+#rightSide {
+  margin-right: 20px;
+}
