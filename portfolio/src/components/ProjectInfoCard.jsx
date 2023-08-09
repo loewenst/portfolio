@@ -16,18 +16,50 @@ import SDSL2 from '../screenshots/SDSL/SDSL2.png'
 const ProjectInfoCard = (props) => {
   let sourceOne = ''
   let sourceTwo = ''
+  let infoObj = ''
+
+  const info = [
+    {
+      name: 'SDSL: Surprisingly Deep Song Lyrics',
+      premise:
+        'Who Wants to be a Millionaire-style trivia game, based on song lyrics with hidden depths.',
+      tech: 'Static application using HTML, CSS and Javascript, deployed with Surge',
+      livelink: 'https://sdsl.surge.sh/',
+      github: 'https://github.com/loewenst/SDSL'
+    },
+    {
+      name: 'Unpopular Opinions: Sci-Fi Edition',
+      premise:
+        'Forum-style app for sharing unconventional opinions about movies and personnel from the sci-fi genre.',
+      tech: 'Full-stack application using Python and Django, deployed with Fly.io',
+      livelink: 'https://unpopular-opinions-scifi.fly.dev/',
+      github: 'https://github.com/kujo8p/unpopular-opinion'
+    },
+    {
+      name: 'Kavanah Forum',
+      premise:
+        'Niche app allowing members of the praying Jewish community to read or post ideas for intentionality during prayers',
+      tech: 'Full-stack application using Django REST Framework and React, deployed with Heroku, Vercel and AWS RDS',
+      livelink: 'https://kavanah-forum-frontend.vercel.app/',
+      github: 'https://github.com/loewenst/Kavanah_Forum'
+    }
+  ]
+
   switch (props.project) {
     case 'SDSL':
       sourceOne = SDSL1
       sourceTwo = SDSL2
+      infoObj = info[0]
       break
     case 'UnpopularOpinions':
       sourceOne = UO1
       sourceTwo = UO2
+      infoObj = info[1]
       break
     case 'Kavanah':
       sourceOne = One
       sourceTwo = Two
+      infoObj = info[2]
       break
   }
 
@@ -58,8 +90,17 @@ const ProjectInfoCard = (props) => {
           />
         </div>
         <CardBody>
-          <CardTitle>Project I (will be prop)</CardTitle>
-          <CardText>Technical Info (will be prop)</CardText>
+          <CardTitle>{infoObj.name}</CardTitle>
+          <CardText>
+            <br />
+            Premise: {infoObj.premise}
+            <br />
+            Technologies: {infoObj.tech}
+            <br />
+            Live Demo: {infoObj.livelink}
+            <br />
+            GitHub: {infoObj.github}
+          </CardText>
         </CardBody>
       </Card>
     </ModalBody>

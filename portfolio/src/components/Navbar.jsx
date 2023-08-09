@@ -1,7 +1,24 @@
 import { useState } from 'react'
 import { Navbar, NavbarBrand, NavLink, NavbarToggler } from 'reactstrap'
+import { useMediaQuery } from 'react-responsive'
 
 const NavBar = (props) => {
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 550px)' })
+  const checkSizeTopBar = () => {
+    if (isSmallScreen) {
+      return 'none'
+    } else {
+      return 'block'
+    }
+  }
+  const checkSizeSideBar = () => {
+    if (isSmallScreen) {
+      return 'inline'
+    } else {
+      return 'none'
+    }
+  }
+
   return (
     <Navbar>
       <div
@@ -21,14 +38,26 @@ const NavBar = (props) => {
             style={{ height: '8vh' }}
           />
         </NavbarBrand>
-        <NavLink style={{ paddingLeft: '10px' }}>About Me</NavLink>
-        <NavLink style={{ paddingLeft: '10px' }}>Projects</NavLink>
-        <NavLink style={{ paddingLeft: '10px' }}>Contact</NavLink>
+        <NavLink
+          style={{ paddingLeft: '10px', display: `${checkSizeTopBar()}` }}
+        >
+          About Me
+        </NavLink>
+        <NavLink
+          style={{ paddingLeft: '10px', display: `${checkSizeTopBar()}` }}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          style={{ paddingLeft: '10px', display: `${checkSizeTopBar()}` }}
+        >
+          Contact
+        </NavLink>
       </div>
       <NavbarToggler
         onClick={props.toggleNav}
         id="toggler"
-        style={{ display: `inline`, marginRight: '32px' }}
+        style={{ display: `${checkSizeSideBar()}`, marginRight: '32px' }}
       />
     </Navbar>
   )
