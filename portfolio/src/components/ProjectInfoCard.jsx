@@ -24,24 +24,24 @@ const ProjectInfoCard = (props) => {
       premise:
         'Who Wants to be a Millionaire-style trivia game, based on song lyrics with hidden depths.',
       tech: 'Static application using HTML, CSS and Javascript, deployed with Surge',
-      livelink: 'https://sdsl.surge.sh/',
-      github: 'https://github.com/loewenst/SDSL'
+      livelink: <a href="https://sdsl.surge.sh/">Here</a>,
+      github: <a href="https://github.com/loewenst/SDSL">Here</a>
     },
     {
       name: 'Unpopular Opinions: Sci-Fi Edition',
       premise:
         'Forum-style app for sharing unconventional opinions about movies and personnel from the sci-fi genre.',
       tech: 'Full-stack application using Python and Django, deployed with Fly.io',
-      livelink: 'https://unpopular-opinions-scifi.fly.dev/',
-      github: 'https://github.com/kujo8p/unpopular-opinion'
+      livelink: <a href="https://unpopular-opinions-scifi.fly.dev/">Here</a>,
+      github: <a href="https://github.com/kujo8p/unpopular-opinion">Here</a>
     },
     {
       name: 'Kavanah Forum',
       premise:
         'Niche app allowing members of the praying Jewish community to read or post ideas for intentionality during prayers',
       tech: 'Full-stack application using Django REST Framework and React, deployed with Heroku, Vercel and AWS RDS',
-      livelink: 'https://kavanah-forum-frontend.vercel.app/',
-      github: 'https://github.com/loewenst/Kavanah_Forum'
+      livelink: <a href="https://kavanah-forum-frontend.vercel.app/">Here</a>,
+      github: <a href="https://github.com/loewenst/Kavanah_Forum">Here</a>
     }
   ]
 
@@ -97,9 +97,7 @@ const ProjectInfoCard = (props) => {
             <br />
             Technologies: {infoObj.tech}
             <br />
-            Live Demo: {infoObj.livelink}
-            <br />
-            GitHub: {infoObj.github}
+            Live Site {infoObj.livelink} | GitHub {infoObj.github}
           </CardText>
         </CardBody>
       </Card>

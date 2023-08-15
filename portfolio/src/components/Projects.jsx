@@ -3,16 +3,33 @@ import { Card, Modal } from 'reactstrap'
 import ProjectInfoCard from './ProjectInfoCard'
 
 const Projects = () => {
+  //state variables
   const [modal, setModal] = useState(false)
   const [project, setProject] = useState('')
   const toggleModal = (str) => {
     setProject(str)
     setModal(!modal)
-    console.log(project)
+  }
+
+  //style for project cards
+  const cardStyle = (link) => {
+    return {
+      height: '18vw',
+      width: '28vw',
+      minHeight: '225px',
+      minWidth: '350px',
+      margin: '15px',
+      borderRadius: '15px',
+      border: 'none',
+      backgroundImage: `url(${link})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      cursor: 'pointer'
+    }
   }
 
   return (
-    <div>
+    <div id="projects">
       <div style={{ backgroundColor: 'teal', height: '35vh' }}>
         <br />
         <br />
@@ -27,45 +44,25 @@ const Projects = () => {
           justifyContent: 'center'
         }}
       >
-        <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '-120px' }}>
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            marginTop: '-120px'
+          }}
+        >
           <Card
             onClick={() => toggleModal('SDSL')}
-            style={{
-              height: '18vw',
-              width: '28vw',
-              margin: '15px',
-              borderRadius: '15px',
-              border: 'none',
-              backgroundImage: 'url("https://i.imgur.com/b4m7vyE.jpg")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
+            style={cardStyle('https://i.imgur.com/b4m7vyE.jpg')}
           ></Card>
           <Card
             onClick={() => toggleModal('UnpopularOpinions')}
-            style={{
-              height: '18vw',
-              width: '28vw',
-              margin: '15px',
-              borderRadius: '15px',
-              border: 'none',
-              backgroundImage: 'url("https://i.imgur.com/gfEMvpH.png")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
+            style={cardStyle('https://i.imgur.com/gfEMvpH.png')}
           ></Card>
           <Card
             onClick={() => toggleModal('Kavanah')}
-            style={{
-              height: '18vw',
-              width: '28vw',
-              margin: '15px',
-              borderRadius: '15px',
-              border: 'none',
-              backgroundImage: 'url("https://i.imgur.com/u3uXgZe.png")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
+            style={cardStyle('https://i.imgur.com/u3uXgZe.png')}
           ></Card>
         </div>
         <Modal isOpen={modal} toggle={() => toggleModal('')} size="lg">

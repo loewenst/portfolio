@@ -1,8 +1,19 @@
 import { Offcanvas, OffcanvasHeader, OffcanvasBody, NavLink } from 'reactstrap'
+import { HashLink } from 'react-router-hash-link'
 
 const OffCanvas = (props) => {
+  const hashLinkStyle = {
+    textDecoration: 'none',
+    color: 'black'
+  }
+
   return (
-    <Offcanvas direction="top" isOpen={props.topNav} toggle={props.toggleNav}>
+    <Offcanvas
+      direction="top"
+      isOpen={props.topNav}
+      toggle={props.toggleNav}
+      returnFocusAfterClose={false}
+    >
       <OffcanvasHeader toggle={props.toggleNav}></OffcanvasHeader>
       <OffcanvasBody
         style={{
@@ -12,9 +23,23 @@ const OffCanvas = (props) => {
           justifyContent: 'center'
         }}
       >
-        <NavLink>About Me</NavLink>
-        <NavLink>Projects</NavLink>
-        <NavLink>Contact</NavLink>
+        <HashLink
+          to="#about-me"
+          style={hashLinkStyle}
+          onClick={props.toggleNav}
+        >
+          About Me
+        </HashLink>
+        <HashLink
+          to="#projects"
+          style={hashLinkStyle}
+          onClick={props.toggleNav}
+        >
+          Projects
+        </HashLink>
+        <HashLink to="#contact" style={hashLinkStyle} onClick={props.toggleNav}>
+          Contact
+        </HashLink>
       </OffcanvasBody>
     </Offcanvas>
   )

@@ -4,7 +4,7 @@ import * as BsIcons from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div>
+    <div id="about-me">
       <div style={{ backgroundColor: 'teal', height: '35vh' }}>
         <br />
         <br />
