@@ -25,7 +25,9 @@ const About = () => {
             <BsIcons.BsStack size={70} />
             <br />
             <br />
-            Full-Stack Development
+            <span style={{ fontSize: 'large', fontWeight: 'bold' }}>
+              Full-Stack Development
+            </span>
             <br />
             <br />
             I'm always learning and growing, so expect this list to change. For
@@ -33,7 +35,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            Languages and Frameworks:
+            <span style={{ color: 'grey' }}>Languages and Frameworks</span>
             <br />
             <br />
             CSS3
@@ -58,7 +60,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            Databases:
+            <span style={{ color: 'grey' }}>Databases</span>
             <br />
             <br />
             MongoDB
@@ -74,7 +76,9 @@ const About = () => {
             <BsIcons.BsFillClipboard2HeartFill size={70} />
             <br />
             <br />
-            Principles & Values
+            <span style={{ fontSize: 'large', fontWeight: 'bold' }}>
+              Principles & Values
+            </span>
             <br />
             <br />
             Anyone who knows me can tell you, you don't know me if you don't
@@ -83,7 +87,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            Values:
+            <span style={{ color: 'grey' }}>Values</span>
             <br />
             <br />
             Accountability
@@ -100,7 +104,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            Principles:
+            <span style={{ color: 'grey' }}>Principles</span>
             <br />
             <br />
             Deep Work
@@ -111,6 +115,7 @@ const About = () => {
             <br />
             Positivity
             <br />
+            <br />
           </CardBody>
         </Card>
         <Card>
@@ -119,7 +124,9 @@ const About = () => {
             <BiIcons.BiSolidRewindCircle size={70} />
             <br />
             <br />
-            Background
+            <span style={{ fontSize: 'large', fontWeight: 'bold' }}>
+              Background
+            </span>
             <br />
             <br />
             Here are some of the highlights of my academic and professional
@@ -127,7 +134,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            Academic Background:
+            <span style={{ color: 'grey' }}>Academic Background</span>
             <br />
             <br />
             PhD, Education and Jewish Studies
@@ -138,7 +145,7 @@ const About = () => {
             -Yeshiva University <br />
             <br />
             <br />
-            Professional Background:
+            <span style={{ color: 'grey' }}>Professional Background</span>
             <br />
             <br />
             Senior Scholar <br />
@@ -149,6 +156,7 @@ const About = () => {
             Creative Writing Teacher <br />
             Poetry Slam Coach <br />
             -Midreshet Shalhevet High School <br />
+            <br />
           </CardBody>
         </Card>
       </CardGroup>
