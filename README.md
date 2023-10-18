@@ -24,7 +24,7 @@ I worked in the Jewish Education space for over a decade, beginning in formal cl
 
 Along the way, I picked up a PhD in Jewish Education, where I studied moral development and researched how Jewish educators teach values and what gets in the way. I also picked up some formal training in interviewing, which everyone should do, because it helps you realize that everyone and everything is interesting, and life is just better when you realize that.
 
-I made the switch to tech in May 2023, when I joined General Assembly's software engineering immersive program, and was quickly blown away by the sheer scale of what you can do with just a little HTML, CSS and Javascript. I was trained as a full stack developer, and setting up databases and backends and API is cool, but if I had my way I'd just make frontend-only games all day, the more diverse and skill-pushing the better.
+I made the switch to tech in May 2023, when I joined General Assembly's software engineering immersive program, and was quickly blown away by the sheer scale of what you can do with just a little HTML, CSS and Javascript. I was trained as a full stack developer, and setting up databases and backends and APIs is cool, but if I had my way I'd just make frontend-only games all day, the more diverse and skill-pushing the better.
 
 I am a reasonably satisfied native of Long Island, NY, where I live with my amazing wife and three kids.
 
@@ -57,4 +57,4 @@ Credit where credit is due, I drew a lot of inspiration for this site's layout a
 
 I also learned a lot about what makes a good portfolio from [Lisa Dubler](https://www.linkedin.com/in/lisadublercoaching/), and from watching [CodingPhase's](https://www.youtube.com/@CodingPhase) portfolio reviews.
 
-And the knowledge to actually create this site came from...well, Google and Stack Overflow, mostly, but the knowledge of how to find those resources and make sense of them came from the excellent instruction I got at [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/new-york-city), and specifically from [Michael Lackey](https://www.linkedin.com/in/michaelglackey/), [Jan Horak](https://www.linkedin.com/in/jan-horak/), [Viridiana Flores](https://www.linkedin.com/in/viridianaflores/) and [Ashley Sands](https://www.linkedin.com/in/ashley-sands/).
+And the knowledge to actually create this site came from...well, Google and Stack Overflow, mostly, but the knowledge of how to _find_ those resources and make sense of them came from the excellent instruction I got at [General Assembly](https://generalassemb.ly/education/software-engineering-immersive/new-york-city), and specifically from [Michael Lackey](https://www.linkedin.com/in/michaelglackey/), [Jan Horak](https://www.linkedin.com/in/jan-horak/), [Viridiana Flores](https://www.linkedin.com/in/viridianaflores/) and [Ashley Sands](https://www.linkedin.com/in/ashley-sands/).
